@@ -1,5 +1,7 @@
 /* Görev 1: Isınalım Biraz :) */
 
+const { parse } = require("@babel/core");
+
 /* TÜM CEVAPLARINI BİR FUNCTION İÇİNDE VERDİĞİNİZ EMİN OL (GÖREV 1D - GÖREV 6). AKSİ TAKTİRDE, OTOMATİK TEST SİSTEMİ ÇALIŞMAYACAKTIR. */
 
 // Görev 1a, 1b ve 1c puanlamaya dahil değildir
@@ -20,6 +22,20 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+
+
+let surucuYasi=25
+if (surucuYasi > 18) 
+{
+  console.log(true);  
+}
+ else
+{
+  console.log(false);
+}
+
+
+
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
 
@@ -32,6 +48,21 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+
+let birinciDeger=30;
+let ikinciDegeri=20;
+if (birinciDeger > ikinciDegeri) {
+  
+   birinciDeger=50;
+   console.log("Birinci değer değişti yeni değeri :",birinciDeger);
+
+} else {
+  console.log("Değer değişmedi");
+  
+}
+
+
+
 /*
 Görev 1c - String bir değeri Number'a dönüştürün (puanlamaya dahil değildir)
 
@@ -43,6 +74,8 @@ Aşağıdakileri yap:
    İPUCU: Number metoduna bakabilirsin
 */
 
+
+
 /*
 Görev 1d - Çarpma
  
@@ -52,9 +85,13 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/) {
+
+function carpma(a,b) 
+{
+  return a * b;
   /*buraya kodunu yazabilirsin*/
 }
+console.log(carpma(7,4));
 
 /* Görev 2 : Köpeğin Yaşı */
 
